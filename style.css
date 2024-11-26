@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;    
+}
+
+header{
+    background-image: url('heroimage.jpg');
+    height: 100vh;
+    background-size: cover;
+}
+
+.headerBackground{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10em;
+
+}
+.headers{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header-items h1{
+    font-size: 2.8rem;
+    text-transform: uppercase;
+}
+.header-items p{
+    margin-top: 0;
+    margin-bottom: 1.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.header-searchBox span{
+    width: 90%;
+    align-self: flex-start;
+    padding-left: 1.8em;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+.header-searchBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header-searchBox input{
+    width: 90%;
+    max-width: 1200px;
+    height: 2rem;
+    border-radius: 2rem;
+    border: none;
+}
+.header-searchBox button{
+    width: 28.3%;
+    height: 2rem;
+    margin-top: 3px;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 4px;
+    background-color: aqua;
+}
+
+
+/* food items section*/
+
+.food-items{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.2rem;
+}
+.food-item p,h2{
+    color: black;
+    width: 90%;
+}
+.food-items img{
+    width: 90%;
+}
+
+/*responsive time*/
+@media (max-width: 480px) {
+    .header-searchBox button{
+        margin-top: 1rem;
+        width: 50%;
+    }
+
+
+    .food-items{
+        flex-direction: column;
+        padding: 2rem;
+    }
+    
+    .food-items img{
+        width: 100%;
+    }
+
+    .food-item{
+        padding-top: 1rem;
+    }
+}
+
+
+
+
+
